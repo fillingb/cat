@@ -8,18 +8,10 @@ export default {
     extend: {
       colors: {
         'xhs': {
-          pink: '#FF2442', // 小红书官方红/粉
+          pink: '#FF2442',
           soft: '#FF4D6D',
           light: '#FFF1F2',
           cream: '#FFF9F0',
-        },
-        'rose-petal': {
-          50: '#fff1f2',
-          100: '#ffe4e6',
-          200: '#fecdd3',
-          300: '#fda4af',
-          400: '#fb7185',
-          500: '#f43f5e',
         }
       },
       borderRadius: {
