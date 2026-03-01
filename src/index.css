@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+body {
+  @apply bg-cream-100 text-stone-800 antialiased;
+}
+
+/* 安全区域（刘海屏/底部横条） */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0);
+}
