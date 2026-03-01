@@ -26,9 +26,9 @@ log = logging.getLogger(__name__)
 # 配置代理与 API Key
 os.environ.setdefault("HTTP_PROXY", os.getenv("HTTP_PROXY", "http://127.0.0.1:7897"))
 os.environ.setdefault("HTTPS_PROXY", os.getenv("HTTPS_PROXY", "http://127.0.0.1:7897"))
-API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyB4Pl_P21RbWVXqt3V6u2rMLQZI4itFLVI")
+API_KEY = os.getenv("GEMINI_API_KEY", "")
 
-if API_KEY and API_KEY != "YOUR_GEMINI_API_KEY_HERE":
+if API_KEY:
     genai.configure(api_key=API_KEY)
 
 # --- 数据模型定义 (用于 Structured Outputs) ---
